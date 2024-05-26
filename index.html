@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cajon de software</title>
+    <title>Descargas de Software</title>
     <style>
         /* Estilos CSS */
         body {
@@ -164,7 +164,7 @@
         }
 
         .contact-form {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -197,11 +197,36 @@
         .contact-form button:hover {
             background-color: #0056b3;
         }
+
+        .toggle-button {
+            margin: 20px 0;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
     </style>
+    <script>
+        function toggleContactForm() {
+            var contactForm = document.querySelector('.contact-form');
+            if (contactForm.style.display === 'none' || contactForm.style.display === '') {
+                contactForm.style.display = 'flex';
+            } else {
+                contactForm.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>cajon de software</h1>
+        <h1>Descargas de Software</h1>
     </header>
     <nav>
         <a href="#">Inicio</a> |
@@ -278,7 +303,7 @@
         </div>
     </div>
     <div class="contact-section">
-        <h2>Dudas e Inquietudes</h2>
+        <button class="toggle-button" onclick="toggleContactForm()">Dudas e Inquietudes</button>
         <div class="contact-form">
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
@@ -287,4 +312,4 @@
         </div>
     </div>
 </body>
-</html>    
+</html>
