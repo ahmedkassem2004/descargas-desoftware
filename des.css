@@ -1,150 +1,121 @@
 /* Estilos CSS */
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #008080;
+    color: #000;
 }
 
-header {
-    background-color: #343a40;
+.window {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.window-title-bar {
+    background: linear-gradient(to bottom, #000080, #0000ff);
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease forwards;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.window-title {
+    font-weight: bold;
 }
 
-header h1 {
-    margin: 0;
-    font-weight: 600;
+.window-controls button {
+    background: #c0c0c0;
+    border: 1px solid #fff;
+    color: #000;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
 }
 
-nav {
-    background-color: #495057;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    animation: slideIn 0.5s ease forwards;
+.window-content {
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.xp-navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c0c0c0;
+    padding: 10px;
+    border: 1px solid #000;
 }
 
-nav a {
-    color: #fff;
+.nav-link {
+    color: #000;
     text-decoration: none;
-    margin: 0 10px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-    animation: zoomIn 0.5s ease forwards;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 .software {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
 }
 
 .software-item {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    border: 1px solid #000;
+    padding: 10px;
     text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.software-item:hover {
-    transform: translateY(-5px);
+    width: 150px;
 }
 
 .software-item img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
-}
-
-.software-item h3 {
-    margin-top: 0;
-}
-
-.software-item p {
-    margin-bottom: 15px;
-}
-
-.software-item a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.software-item a:hover {
-    background-color: #0056b3;
 }
 
 .taskbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #343a40;
-    padding: 10px 0;
+    background-color: #c0c0c0;
+    padding: 10px;
     text-align: center;
-    animation: slideUp 0.5s ease forwards;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    border-top: 1px solid #000;
 }
 
 .hidden {
     display: none;
 }
 
+.contact-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer
