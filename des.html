@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas de Software</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        nav {
+            background-color: #495057;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            animation: slideIn 0.5s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            animation: zoomIn 0.5s ease forwards;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .software {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .software-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .software-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .software-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .software-item h3 {
+            margin-top: 0;
+        }
+
+        .software-item p {
+            margin-bottom: 15px;
+        }
+
+        .software-item a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .software-item a:hover {
+            background-color: #0056b3;
+        }
+
+        .taskbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+            animation: slideUp 0.5s ease forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .contact-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descargas de Software</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Navegadores</a> |
+        <a href="#">Herramientas de Diseño</a> |
+        <a href="#">Utilidades</a>
+    </nav>
+    <div class="container">
+        <h2>Programas Destacados</h2>
+        <div class="software">
+            <div class="software-item">
+                <img src="google-chrome.png" alt="Google Chrome">
+                <h3>Google Chrome</h3>
+                <p>El navegador web más popular.</p>
+                <a href="https://www.google.com/chrome/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="firefox.png" alt="Firefox">
+                <h3>Firefox</h3>
+                <p>Navegador web rápido y privado.</p>
+                <a href="https://www.mozilla.org/es-ES/firefox/new/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="microsoft-edge.png" alt="Microsoft Edge">
+                <h3>Microsoft Edge</h3>
+                <p>Navegador web rápido y seguro.</p>
+                <a href="https://www.microsoft.com/es-es/edge">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="kaspersky.png" alt="Kaspersky">
+                <h3>Kaspersky</h3>
+                <p>Software antivirus confiable.</p>
+                <a href="https://www.kaspersky.com/es/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="virtualbox.png" alt="VirtualBox">
+                <h3>VirtualBox</h3>
+                <p>Software de virtualización.</p>
+                <a href="https://www.virtualbox.org/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="brave-browser.png" alt="Brave Browser">
+                <h3>Brave Browser</h3>
+                <p>Navegador web centrado en la privacidad.</p>
+                <a href="https://brave.com/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="vlc.png" alt="VLC">
+                <h3>VLC Media Player</h3>
+                <p>Reproductor multimedia versátil.</p>
+                <a href="https://www.videolan.org/vlc/index.es.html">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="visual-studio-code.png" alt="Visual Studio Code">
+                <h3>Visual Studio Code</h3>
+                <p>Editor de código fuente.</p>
+                <a href="https://code.visualstudio.com/">Descargar</a>
+            </div>
+            <div class="software-item">
+                <img src="sumatra-pdf.png" alt="Sumatra PDF">
+                <h3>Sumatra PDF</h3>
+                <p>Lector de PDF ligero.</p>
+                <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">Descargar</a>
+            </div>
+        </div>
+        <div class="taskbar">
+            <button id="downloadButton" class="hidden">Descargar</button>
+        </div>
+    </div>
+    <div class="contact-section">
+        <h2>Dudas e Inquietudes</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo Electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
