@@ -1,21 +1,14 @@
-document.querySelectorAll('.software-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        item.style.backgroundColor = '#f0f0f0';
-        item.style.transition = 'background-color 0.3s ease';
-    });
+function toggleContactForm() {
+    const form = document.querySelector('.contact-form');
+    form.classList.toggle('hidden');
+}
 
-    item.addEventListener('mouseleave', () => {
-        item.style.backgroundColor = '#fff';
-        item.style.transition = 'background-color 0.3s ease';
-    });
+function showRegisterForm() {
+    document.querySelector('.login-form').classList.add('hidden');
+    document.querySelector('.register-form').classList.remove('hidden');
+}
 
-    item.addEventListener('click', () => {
-        const downloadButton = document.getElementById('downloadButton');
-        const programName = item.querySelector('h3').textContent;
-        const programLink = item.querySelector('a').href;
-
-        downloadButton.textContent = `Descargar ${programName}`;
-        downloadButton.href = programLink;
-        downloadButton.classList.remove('hidden');
-    });
-});
+function showLoginForm() {
+    document.querySelector('.register-form').classList.add('hidden');
+    document.querySelector('.login-form').classList.remove('hidden');
+}
