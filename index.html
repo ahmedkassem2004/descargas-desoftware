@@ -21,7 +21,7 @@
             <nav class="xp-navbar">
                 <a href="#" class="nav-link">Inicio</a>
                 <a href="#navegadores" class="nav-link">Navegadores</a>
-                <a href="#" class="nav-link">Herramientas de Diseño</a>
+                <a href="#diseno" class="nav-link">Herramientas de Diseño</a>
                 <a href="#utilidades" class="nav-link">Utilidades</a>
             </nav>
             <h2>Programas Destacados</h2>
@@ -57,6 +57,33 @@
                     <p>Navegador web centrado en la privacidad.</p>
                     <a href="https://brave.com/" class="download-button">
                         <img src="download-button.png" alt="Descargar Brave Browser">
+                    </a>
+                </div>
+                <div class="software-item">
+                    <img src="opera.png" alt="Opera Browser">
+                    <h3>Opera Browser</h3>
+                    <p>Navegador web con funciones avanzadas.</p>
+                    <a href="https://www.opera.com/" class="download-button">
+                        <img src="download-button.png" alt="Descargar Opera Browser">
+                    </a>
+                </div>
+            </div>
+            <div class="software" id="diseno">
+                <h3>Herramientas de Diseño</h3>
+                <div class="software-item">
+                    <img src="krita.png" alt="Krita">
+                    <h3>Krita</h3>
+                    <p>Software de diseño y pintura digital.</p>
+                    <a href="https://krita.org/" class="download-button">
+                        <img src="download-button.png" alt="Descargar Krita">
+                    </a>
+                </div>
+                <div class="software-item">
+                    <img src="visual-studio-code.png" alt="Visual Studio Code">
+                    <h3>Visual Studio Code</h3>
+                    <p>Editor de código fuente.</p>
+                    <a href="https://code.visualstudio.com/" class="download-button">
+                        <img src="download-button.png" alt="Descargar Visual Studio Code">
                     </a>
                 </div>
             </div>
@@ -95,14 +122,6 @@
                     </a>
                 </div>
                 <div class="software-item">
-                    <img src="visual-studio-code.png" alt="Visual Studio Code">
-                    <h3>Visual Studio Code</h3>
-                    <p>Editor de código fuente.</p>
-                    <a href="https://code.visualstudio.com/" class="download-button">
-                        <img src="download-button.png" alt="Descargar Visual Studio Code">
-                    </a>
-                </div>
-                <div class="software-item">
                     <img src="sumatra-pdf.png" alt="Sumatra PDF">
                     <h3>Sumatra PDF</h3>
                     <p>Lector de PDF ligero.</p>
@@ -124,6 +143,14 @@
                     <p>Suite ofimática gratuita y de código abierto.</p>
                     <a href="https://www.libreoffice.org/" class="download-button">
                         <img src="download-button.png" alt="Descargar LibreOffice">
+                    </a>
+                </div>
+                <div class="software-item">
+                    <img src="microsoft-pc-manager.png" alt="Microsoft PC Manager">
+                    <h3>Microsoft PC Manager</h3>
+                    <p>Herramienta de optimización y mantenimiento de PC.</p>
+                    <a href="https://pcmanager.microsoft.com/" class="download-button">
+                        <img src="download-button.png" alt="Descargar Microsoft PC Manager">
                     </a>
                 </div>
             </div>
@@ -158,6 +185,18 @@
             <input type="password" placeholder="Confirmar Contraseña">
             <button type="submit">Registrar</button>
             <p>¿Ya tienes una cuenta? <a href="#" onclick="showLoginForm()">Iniciar Sesión</a></p>
+        </div>
+    </div>
+
+    <!-- Modal para crear cuenta -->
+    <div id="registerModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Crear Cuenta</h2>
+            <input type="text" id="registerName" placeholder="Nombre">
+            <input type="email" id="registerEmail" placeholder="Correo Electrónico">
+            <input type="password" id="registerPassword" placeholder="Contraseña">
+            <button type="submit" onclick="registerAccount()">Registrar</button>
         </div>
     </div>
 </body>
