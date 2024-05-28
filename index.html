@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cajon de software</title>
+    <title>Descargas de Software - Estilo Minimalista</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="window">
         <div class="window-title-bar">
-            <span class="window-title">cajon de software</span>
+            <span class="window-title">Descargas de Software</span>
             <div class="window-controls">
                 <button class="minimize">_</button>
                 <button class="maximize">□</button>
@@ -153,6 +153,22 @@
                         <img src="download-button.png" alt="Descargar Microsoft PC Manager">
                     </a>
                 </div>
+                <div class="software-item">
+                    <img src="ccleaner.png" alt="CCleaner">
+                    <h3>CCleaner</h3>
+                    <p>Herramienta de limpieza y optimización de PC.</p>
+                    <a href="https://www.ccleaner.com/" class="download-button">
+                        <img src="download-button.png" alt="Descargar CCleaner">
+                    </a>
+                </div>
+                <div class="software-item">
+                    <img src="avast.png" alt="Avast">
+                    <h3>Avast</h3>
+                    <p>Software antivirus y de seguridad.</p>
+                    <a href="https://www.avast.com/" class="download-button">
+                        <img src="download-button.png" alt="Descargar Avast">
+                    </a>
+                </div>
             </div>
             <div class="taskbar">
                 <button id="downloadButton" class="hidden">Descargar</button>
@@ -169,20 +185,20 @@
         </div>
     </div>
 
+    <!-- Sección de inicio de sesión y registro -->
     <div class="login-section">
         <div class="login-form">
             <h2>Iniciar Sesión</h2>
-            <input type="text" placeholder="Usuario">
+            <input type="email" placeholder="Correo Electrónico">
             <input type="password" placeholder="Contraseña">
             <button type="submit">Iniciar Sesión</button>
             <p>¿No tienes una cuenta? <a href="#" onclick="showRegisterForm()">Crear Cuenta</a></p>
         </div>
         <div class="register-form hidden">
             <h2>Crear Cuenta</h2>
-            <input type="text" placeholder="Usuario">
+            <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo Electrónico">
             <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Confirmar Contraseña">
             <button type="submit">Registrar</button>
             <p>¿Ya tienes una cuenta? <a href="#" onclick="showLoginForm()">Iniciar Sesión</a></p>
         </div>
