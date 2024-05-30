@@ -23,6 +23,7 @@
                 <a href="#navegadores" class="nav-link">Navegadores</a>
                 <a href="#diseno" class="nav-link">Herramientas de Diseño</a>
                 <a href="#utilidades" class="nav-link">Utilidades</a>
+                <a href="#seguridad" class="nav-link">Seguridad</a>
             </nav>
             <h2>Programas Destacados</h2>
             <div class="software" id="navegadores">
@@ -60,7 +61,7 @@
                     </a>
                 </div>
                 <div class="software-item">
-                    <img src="opera.png" alt="Opera Browser">
+                    <img src="opera-browser.png" alt="Opera Browser">
                     <h4>Opera Browser</h4>
                     <p>Navegador rápido y seguro.</p>
                     <a href="https://download.opera.com/download/get/?id=47274&location=408&nothanks=yes&sub=marine_64" download>
@@ -89,14 +90,6 @@
             </div>
             <div class="software" id="utilidades">
                 <h3>Utilidades</h3>
-                <div class="software-item">
-                    <img src="kaspersky.png" alt="Kaspersky">
-                    <h4>Kaspersky</h4>
-                    <p>Software antivirus confiable.</p>
-                    <a href="https://products.s.kaspersky-labs.com/spanish/homeuser/kfa2020/20.0.14.1085/patch_a/kfa20.0.14.1085aes_20099.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
                 <div class="software-item">
                     <img src="virtualbox.png" alt="VirtualBox">
                     <h4>VirtualBox</h4>
@@ -130,14 +123,6 @@
                     </a>
                 </div>
                 <div class="software-item">
-                    <img src="avast.png" alt="Avast">
-                    <h4>Avast</h4>
-                    <p>Software antivirus gratuito.</p>
-                    <a href="https://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
                     <img src="libreoffice.png" alt="LibreOffice">
                     <h4>LibreOffice</h4>
                     <p>Suite ofimática libre.</p>
@@ -162,6 +147,49 @@
                     </a>
                 </div>
             </div>
+            <div class="software" id="seguridad">
+                <h3>Seguridad</h3>
+                <div class="software-item">
+                    <img src="kaspersky.png" alt="Kaspersky">
+                    <h4>Kaspersky</h4>
+                    <p>Software antivirus confiable.</p>
+                    <a href="https://products.s.kaspersky-labs.com/spanish/homeuser/kfa2020/20.0.14.1085/patch_a/kfa20.0.14.1085aes_20099.exe" download>
+                        <img src="download-button.png" alt="Descargar" class="download-button">
+                    </a>
+                </div>
+                <div class="software-item">
+                    <img src="avast.png" alt="Avast">
+                    <h4>Avast</h4>
+                    <p>Antivirus gratuito y potente.</p>
+                    <a href="https://files.avast.com/iavs9x/avast_free_antivirus_setup_offline.exe" download>
+                        <img src="download-button.png" alt="Descargar" class="download-button">
+                    </a>
+                </div>
+            </div>
+            <div class="taskbar">
+                <button id="downloadButton" class="hidden">Descargar</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-section">
+        <button class="toggle-button" onclick="toggleContactForm()">Dudas e Inquietudes</button>
+        <div class="contact-form">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo Electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+    <div id="authModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('authModal')">&times;</span>
+            <h2>Iniciar Sesión o Crear Cuenta</h2>
+            <form id="authForm">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Crear Cuenta / Iniciar Sesión</button>
+            </form>
         </div>
     </div>
 </body>
