@@ -6,6 +6,79 @@
     <title>cajon de software.com</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <style>
+        body {
+            background-color: #008080;
+            font-family: Tahoma, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        .window {
+            width: 90%;
+            max-width: 800px;
+            background-color: #d4d0c8;
+            border: 2px solid gray;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        }
+        .window-title-bar {
+            background: linear-gradient(to bottom, #000080, #000060);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+        .window-controls button {
+            background-color: silver;
+            border: 1px solid gray;
+            font-size: 12px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            margin-left: 2px;
+        }
+        .window-controls button:hover {
+            background-color: #c0c0c0;
+        }
+        .window-content {
+            padding: 10px;
+        }
+        .xp-navbar {
+            background-color: #b0c4de;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .xp-navbar .nav-link {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 3px 8px;
+            border: 1px solid transparent;
+        }
+        .xp-navbar .nav-link:hover {
+            background-color: #87ceeb;
+            border: 1px solid #000080;
+        }
+        .software-item {
+            background-color: white;
+            border: 1px solid gray;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .software-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .download-button {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
 </head>
 <body>
     <div class="window">
@@ -28,198 +101,6 @@
                 <a href="#seguridad" class="nav-link">Seguridad</a>
             </nav>
             <h2>Programas Destacados</h2>
-            <div class="software" id="navegadores">
-                <h3>Navegadores</h3>
-                <div class="software-item">
-                    <img src="google-chrome.png" alt="Google Chrome">
-                    <h4>Google Chrome</h4>
-                    <p>El navegador web más popular.</p>
-                    <a href="https://dl.google.com/chrome/install/googlechromestandaloneenterprise64.msi" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="firefox.png" alt="Firefox">
-                    <h4>Firefox</h4>
-                    <p>Navegador web rápido y privado.</p>
-                    <a href="https://download.mozilla.org/?product=firefox-stub&os=win&lang=es-ES" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="microsoft-edge.png" alt="Microsoft Edge">
-                    <h4>Microsoft Edge</h4>
-                    <p>Navegador web rápido y seguro.</p>
-                    <a href="https://msedgedriver.azureedge.net/105.0.1343.42/edgedriver_win64.zip" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="brave-browser.png" alt="Brave Browser">
-                    <h4>Brave Browser</h4>
-                    <p>Navegador web centrado en la privacidad.</p>
-                    <a href="https://referrals.brave.com/latest/BraveBrowserSetup.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="opera.png" alt="Opera Browser">
-                    <h4>Opera Browser</h4>
-                    <p>Navegador rápido y seguro.</p>
-                    <a href="https://download.opera.com/download/get/?id=47274&location=408&nothanks=yes&sub=marine_64" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="thorium-browser.png" alt="Thorium">
-                    <h4>Thorium Browser</h4>
-                    <p>Navegador con tecnología avanzada.</p>
-                    <a href="https://thoriumbrowser.com/downloads/thorium-windows.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="software" id="diseno">
-                <h3>Herramientas de Diseño</h3>
-                <div class="software-item">
-                    <img src="krita.png" alt="Krita">
-                    <h4>Krita</h4>
-                    <p>Software de diseño gráfico.</p>
-                    <a href="https://download.kde.org/stable/krita/4.2.9/krita-x64-4.2.9-setup.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="software" id="utilidades">
-                <h3>Utilidades</h3>
-                <div class="software-item">
-                    <img src="virtualbox.png" alt="VirtualBox">
-                    <h4>VirtualBox</h4>
-                    <p>Software de virtualización.</p>
-                    <a href="https://download.virtualbox.org/virtualbox/6.1.12/VirtualBox-6.1.12-139181-Win.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="vlc.png" alt="VLC Media Player">
-                    <h4>VLC Media Player</h4>
-                    <p>Reproductor multimedia versátil.</p>
-                    <a href="https://get.videolan.org/vlc/3.0.11.1/win64/vlc-3.0.11.1-win64.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="microsoft-pc-manager.png" alt="Microsoft PC Manager">
-                    <h4>Microsoft PC Manager</h4>
-                    <p>Herramienta de optimización del sistema.</p>
-                    <a href="https://download.microsoft.com/download/8/7/B/87BD074A-04A5-403E-997A-785D1092F8C7/Install_Microsoft_PC_Manager.msi" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="ccleaner.png" alt="CCleaner">
-                    <h4>CCleaner</h4>
-                    <p>Optimización del sistema.</p>
-                    <a href="https://download.ccleaner.com/ccsetup570.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="7zip.png" alt="7-Zip">
-                    <h4>7-Zip</h4>
-                    <p>Gestor de archivos comprimidos.</p>
-                    <a href="https://www.7-zip.org/a/7z1900-x64.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="winrar.png" alt="WinRAR">
-                    <h4>WinRAR</h4>
-                    <p>Software de compresión de archivos.</p>
-                    <a href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-601.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="bandicam.png" alt="Bandicam">
-                    <h4>Bandicam</h4>
-                    <p>Software de grabación de pantalla.</p>
-                    <a href="https://dl.bandicam.com/Bandicam_Setup.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="software" id="documentos">
-                <h3>Documentos</h3>
-                <div class="software-item">
-                    <img src="libreoffice.png" alt="LibreOffice">
-                    <h4>LibreOffice</h4>
-                    <p>Suite ofimática libre.</p>
-                    <a href="https://download.documentfoundation.org/libreoffice/stable/6.4.3/win/x86_64/LibreOffice_6.4.3_Win_x64.msi" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="sumatra-pdf.png" alt="Sumatra PDF">
-                    <h4>Sumatra PDF</h4>
-                    <p>Visor de documentos PDF.</p>
-                    <a href="https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.1.2-64-install.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="software" id="editores">
-                <h3>Editores de Código</h3>
-                <div class="software-item">
-                    <img src="atom.png" alt="Atom">
-                    <h4>Atom</h4>
-                    <p>Editor de texto y código fuente.</p>
-                    <a href="https://atom.io/download/windows_x64" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="visual-studio-code.png" alt="Visual Studio Code">
-                    <h4>Visual Studio Code</h4>
-                    <p>Editor de código fuente.</p>
-                    <a href="https://update.code.visualstudio.com/latest/win32-x64-user/stable" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="software" id="seguridad">
-                <h3>Seguridad</h3>
-                <div class="software-item">
-                    <img src="kaspersky.png" alt="Kaspersky">
-                    <h4>Kaspersky</h4>
-                    <p>Software antivirus.</p>
-                    <a href="https://products.kaspersky-labs.com/spanish/homeuser/kfa2019/forbes/kfa19.0.0.1088es.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-                <div class="software-item">
-                    <img src="avast.png" alt="Avast">
-                    <h4>Avast</h4>
-                    <p>Antivirus gratuito y potente.</p>
-                    <a href="https://files.avast.com/iavs9x/avast_free_antivirus_setup_offline.exe" download>
-                        <img src="download-button.png" alt="Descargar" class="download-button">
-                    </a>
-                </div>
-            </div>
-            <div class="taskbar">
-                <button id="downloadButton" class="hidden">Descargar</button>
-            </div>
-        </div>
-    </div>
-    <div class="contact-section">
-        <button class="toggle-button" onclick="toggleContactForm()">Dudas e Inquietudes</button>
-        <div class="contact-form hidden">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo Electrónico">
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </div>
-    </div>
         </div>
     </div>
 </body>
